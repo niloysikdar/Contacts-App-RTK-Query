@@ -13,3 +13,8 @@ h2 {
   font-size: 1.4rem;
   font-weight: 500;
 }
+
+button {
+  padding: 5px 14px;
+  cursor: pointer;
+}

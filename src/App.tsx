@@ -2,6 +2,9 @@ import { useGetContactsQuery } from './services/contactsApi';
 
 import './App.css';
 import ContactDetail from './components/ContactDetail';
+import AddContact from './components/AddContact';
+import UpdateContact from './components/UpdateContact';
+import DeleteContact from './components/DeleteContact';
 
 function App() {
   const { data, isLoading, isFetching, isSuccess, isError } =
@@ -26,6 +29,19 @@ function App() {
           })}
         </div>
       )}
+
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          marginTop: '60px',
+          gap: '20px',
+        }}
+      >
+        <AddContact />
+        <UpdateContact />
+        <DeleteContact />
+      </div>
     </div>
   );
 }
